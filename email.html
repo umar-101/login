@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./css/intlTelInput.css" />
+    <link rel="stylesheet" href="./css/demo.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app__header">
+      <img class="header-img" src="img/cashapp.png" alt="cashapp" />
+      <h2 class="header-title">Cash App</h2>
+    </div>
+    <div class="login-form">
+      <!-- Email Login Second Page -->
+      <div class="login" id="email">
+        <h3 class="login-heading">Log in using your email</h3>
+
+        <p class="login-subheading">We'll send you a code to login</p>
+
+        <div class="group">
+          <label for="user" class="label">Email</label>
+          <input
+            placeholder="Your email address"
+            id="user"
+            type="text"
+            class="input"
+          />
+        </div>
+
+        <div class="app__buttons">
+          <button
+            class="my-buttons"
+            onClick="location.href='index.html'"
+            style="background-color: #d3d3d3; color: #505050"
+          >
+            Use Phone
+          </button>
+          <button class="my-buttons" onClick="location.href='code.html'">
+            Next
+          </button>
+        </div>
+
+        <p class="login-policy">
+          By entering and clicking Next, you agree to the
+          <span class="underline">Terms,E-Sign Consent</span>&
+          <span class="underline">Privacy Policy</span>
+        </p>
+      </div>
+    </div>
+
+    <script src="./js/intlTelInput.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

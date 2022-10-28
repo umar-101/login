@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./css/intlTelInput.css" />
+    <link rel="stylesheet" href="./css/demo.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app__header">
+      <img class="header-img" src="img/cashapp.png" alt="cashapp" />
+      <h2 class="header-title">Cash App</h2>
+    </div>
+    <div class="login-form">
+      <!-- Mobile Login Section -->
+
+      <div class="login" id="signin">
+        <h3 class="login-heading">Log in using your phone</h3>
+
+        <p class="login-subheading">We'll text you a code to login.</p>
+
+        <div class="group">
+          <label for="user" class="label">Mobile number</label>
+          <input
+            placeholder="(123) 456-7890"
+            type="tel"
+            class="input"
+            placeholder=""
+            id="telephone"
+          />
+        </div>
+
+        <div class="app__buttons">
+          <button
+            class="my-buttons simple"
+            onClick="location.href='email.html'"
+            style="background-color: #d3d3d3; color: #505050"
+          >
+            Use email
+          </button>
+
+          <button class="my-buttons" onClick="location.href='code.html'">
+            Next
+          </button>
+        </div>
+
+        <p class="login-policy">
+          By entering and clicking Next, you agree to the
+          <span class="underline">Terms,E-Sign Consent</span>&
+          <span class="underline">Privacy Policy</span>
+        </p>
+      </div>
+    </div>
+
+    <script src="./js/intlTelInput.js"></script>
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/08b16150ca.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
